@@ -43,6 +43,7 @@ h1 {
 
 .table {
     border-collapse: collapse;
+    width: 100%;
 }
 
 .table td,
@@ -70,19 +71,19 @@ h1 {
  * This sucks. Have to reset and redefine horizontal
  * padding (possibly other styles) to transfer it to inner DIV.
  */
-.sticky-hooters-table th,
+/*.sticky-hooters-table th,
 .sticky-hooters-table tfoot td {
     padding: 0;
 }
 .sticky-hooters-table th .sticky-hooters-th-inner,
 .sticky-hooters-table td .sticky-hooters-td-inner {
     padding: 15px;
-}
+}*/
 
 /*
  * Generic sticky-hooter styles.
  */
-.sticky-hooters-table tfoot.fixed .sticky-hooters-td-inner,
+/*.sticky-hooters-table tfoot.fixed .sticky-hooters-td-inner,
 .sticky-hooters-table thead.fixed .sticky-hooters-th-inner {
     border-bottom: inherit;
     background: inherit;
@@ -95,4 +96,21 @@ h1 {
     border-top: inherit;
     bottom: 0;
     top: auto;
+}*/
+
+.sticky-hooters_wrapper table {
+    table-layout: fixed;
 }
+
+.sticky-hooters_sticky-wrapper {
+    position: fixed;
+}
+
+.sticky-hooters_sticky-footer {
+    bottom: 0;
+}
+
+.sticky-hooters_sticky-header {
+    top: 0;
+}
+
