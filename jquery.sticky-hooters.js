@@ -120,8 +120,9 @@
                 .wrap(function () {
                         var classNames = this.element.getAttribute('class');
                         if (this.isTable) {
-                            return $('<table></table>').addClass(classNames);
-                            //return '<table class="' + classNames + '"></table>';
+                            return $('<table></table>').addClass(classNames).css({
+                                'table-layout': 'fixed'
+                            });
                         }
                         return '';
                     }.bind(this)
